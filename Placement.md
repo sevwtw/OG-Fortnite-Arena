@@ -1,4 +1,7 @@
-### Placement Points
+# Placement Points
+Displays Arena points with placement scoring.
+
+### SDK (FortPlayerController.cpp)
 - Replace your bIsRespawningAllowed code with this snippet
 ```cpp
 if (!bIsRespawningAllowed)
