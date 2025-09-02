@@ -1,5 +1,5 @@
 ### Placement Points
-- Replace your bIsRespawningAllowed code with this
+- Replace your bIsRespawningAllowed code with this snippet
 ```cpp
 if (!bIsRespawningAllowed)
 {
