@@ -1,7 +1,4 @@
-# OG-Fortnite-Arena
-Displays Arena points with elimination pop-ups, placement scoring, and full widget support. Made for OG Fortnite Private Servers.
-
-Credits to wiktorwiktor12 for the Widget code
+Credits to [wiktorwiktor11](https://github.com/wiktorwiktor11) for the Widget code
 
 ### SDK (AFortPlayerStateAthena.cpp in function ClientOnPawnDied)
 ### Solos (Required)
