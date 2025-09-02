@@ -15,5 +15,5 @@ Please give this repository a star if this was helpful!
 
 ---
 
-> #### Arena Widget - [View Code](https://github.com/sevwtw/OG-Fortnite-Arena/blob/main/Widget.cpp)
+> #### Arena Widget - [View Code](https://github.com/sevwtw/OG-Fortnite-Arena/blob/main/Widget.md)
 <img width="200" height="125" alt="image" src="https://github.com/user-attachments/assets/6ebc5c1e-523f-4f37-9796-ecb4025c7195" />
