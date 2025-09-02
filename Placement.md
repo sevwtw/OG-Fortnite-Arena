@@ -46,6 +46,7 @@ if (!bIsRespawningAllowed)
 		}
 	}
 
+	// Commented this out for testing in my own gameserver, you don't need to comment this out
 	//if (Fortnite_Version < 6) // Spectating (is this the actual build or is it like 6.10 when they added it auto).
 	//{
 	//	if (GameState->GetGamePhase() > EAthenaGamePhase::Warmup)
