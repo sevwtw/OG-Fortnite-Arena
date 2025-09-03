@@ -1,4 +1,4 @@
-### SDK (AFortPlayerStateAthena.cpp in function ClientOnPawnDied)
+### SDK (AFortPlayerController.cpp in function ClientOnPawnDied)
 ### Solos (Required)
 ```cpp
 KillerPlayerState->KillScore()++;
@@ -10,7 +10,7 @@ KillerPlayerState->OnRep_TeamKillScore();
 KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore());
 ```
 
-### SDK (AFortPlayerStateAthena.h)
+### SDK (AFortPlayerController.h)
 ```cpp
 int32& KillScore()
 {
