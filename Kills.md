@@ -10,7 +10,7 @@ KillerPlayerState->OnRep_TeamKillScore();
 KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore());
 ```
 
-### SDK (AFortPlayerController.h)
+### SDK (AFortPlayerStateAthena.h)
 ```cpp
 int32& KillScore()
 {
