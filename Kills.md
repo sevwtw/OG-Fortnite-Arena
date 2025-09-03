@@ -1,5 +1,3 @@
-Credits to [wiktorwiktor11](https://github.com/wiktorwiktor11) for the Widget code
-
 ### SDK (AFortPlayerStateAthena.cpp in function ClientOnPawnDied)
 ### Solos (Required)
 ```cpp
