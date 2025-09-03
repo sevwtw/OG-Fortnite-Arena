@@ -111,7 +111,7 @@ for (int32 i = 0; i < AllPlayerControllers.Num(); ++i) {
 	int32 Placement = CurrentPlayerState->GetPlace();
 	int32 Points = 0;
 
-	else if (Placement == 3) Points += 10;
+	if (Placement == 3) Points += 10;
 	else if (Placement == 5) Points += 20;
 	else if (Placement <= 10) Points += 10;
 	else if (Placement <= 20) Points += 15;
