@@ -2,7 +2,7 @@
 Displays Arena points with placement scoring.
 
 ### SDK (FortPlayerController.cpp)
-- Put this below the if (!bIsRespawningAllowed) check, not in it below it
+- Put this below the if (!bIsRespawningAllowed)
 <img width="1038" height="348" alt="image" src="https://github.com/user-attachments/assets/7f1e7b08-459e-4eeb-9e47-2f3b5cdad229" />
 
 ```cpp
