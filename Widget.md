@@ -1,7 +1,7 @@
 # Arena widget
 Displays the arena widget that shows all your hype points.
 
-### Your own C++ DLL project (Will make a folder with a source for 12.41)
+### Put this into your SSL bypass (Starfall, Cobalt, etc.)
 ```cpp
 {
     { // Arena
