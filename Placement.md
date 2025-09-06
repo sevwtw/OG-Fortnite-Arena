@@ -5,44 +5,7 @@ Displays Arena points with placement scoring.
 
 ### SDK (FortPlayerController.cpp)
 ```cpp
-auto GameMode = Cast<AFortGameModeAthena>(GetWorld()->GetGameMode());
-
-auto AllPlayerStates = UGameplayStatics::GetAllActorsOfClass(GetWorld(), AFortPlayerStateAthena::StaticClass());
-TArray<AFortPlayerControllerAthena*> AllPlayerControllers = GameMode->GetAlivePlayers();
-
-bool bDidSomeoneWin = AllPlayerStates.Num() == 0;
-
-for (int i = 0; i < AllPlayerStates.Num(); ++i)
-{
-	auto CurrentPlayerState = (AFortPlayerStateAthena*)AllPlayerStates.at(i);
-
-	if (CurrentPlayerState->GetPlace() <= 1)
-	{
-		auto Controller = (AFortPlayerControllerAthena*)AllPlayerControllers.at(i);
-		if (!Controller) continue;
-
-		Controller->ClientReportTournamentPlacementPointsScored(1, 50); // Victory Royale points
-
-		break;
-	}
-}
-
-for (int32 i = 0; i < AllPlayerControllers.Num(); ++i) {
-	auto Controller = (AFortPlayerControllerAthena*)AllPlayerControllers.at(i);
-	if (!Controller) continue;
-
-	auto CurrentPlayerState = (AFortPlayerStateAthena*)AllPlayerStates.at(i);
-	if (!CurrentPlayerState) continue;
-
-	int32 Placement = CurrentPlayerState->GetPlace();
-	if (Placement == 1) continue;
-
-	if (Placement <= 3) Controller->ClientReportTournamentPlacementPointsScored(Placement, 10);
-	else if (Placement <= 5) Controller->ClientReportTournamentPlacementPointsScored(Placement, 20);
-	else if (Placement <= 10) Controller->ClientReportTournamentPlacementPointsScored(Placement, 10);
-	else if (Placement <= 20) Controller->ClientReportTournamentPlacementPointsScored(Placement, 10);
-	else if (Placement <= 25) Controller->ClientReportTournamentPlacementPointsScored(Placement, 15);
-}
+Code is buggy, wait until fix
 ```
 
 ### SDK (AFortPlayerControllerAthena.h)
