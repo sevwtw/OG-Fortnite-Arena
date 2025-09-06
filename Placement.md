@@ -29,9 +29,6 @@ for (int i = 0; i < AllPlayerStates.Num(); ++i)
 	}
 }
 
-auto AllPlayerStates = UGameplayStatics::GetAllActorsOfClass(GetWorld(), AFortPlayerStateAthena::StaticClass());
-TArray<AFortPlayerControllerAthena*> AllPlayerControllers = GameMode->GetAlivePlayers();
-
 for (int32 i = 0; i < AllPlayerControllers.Num(); ++i) {
 	auto Controller = (AFortPlayerControllerAthena*)AllPlayerControllers.at(i);
 	if (!Controller) continue;
