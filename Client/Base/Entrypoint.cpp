@@ -4,7 +4,7 @@ DWORD Main(LPVOID) {
 
     // Client
     {
-        { // Arena (this will only show the arena widget, for the arena playlist)
+        { // Arena (this will only show the arena widget for the arena playlist)
             UFortPlaylistAthena* ArenaPlaylist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_ShowdownAlt_Solo.Playlist_ShowdownAlt_Solo");
             while (!ArenaPlaylist)
                 ArenaPlaylist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_ShowdownAlt_Solo.Playlist_ShowdownAlt_Solo");
