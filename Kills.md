@@ -7,9 +7,22 @@ KillerPlayerState->KillScore()++;
 KillerPlayerState->OnRep_Kills();
 KillerPlayerState->ClientReportKill(DeadPlayerState);
 
-KillerPlayerState->TeamKillScore()++; // From my testing, you need this for the elimination pop-up
+KillerPlayerState->TeamKillScore()++;
 KillerPlayerState->OnRep_TeamKillScore();
-KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore());
+KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore()); // From my testing, you need this for the elimination pop-up
+
+// Reboot version
+if (MemberOffsets::FortPlayerStateAthena::KillScore != -1)
+	KillerPlayerState->Get<int>(MemberOffsets::FortPlayerStateAthena::KillScore)++;
+
+if (MemberOffsets::FortPlayerStateAthena::TeamKillScore != -1)
+	KillerPlayerState->Get<int>(MemberOffsets::FortPlayerStateAthena::TeamKillScore)++;
+
+KillerPlayerState->OnRep_Kills();
+KillerPlayerState->ClientReportKill(DeadPlayerState);
+
+KillerPlayerState->OnRep_TeamKillScore();
+KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore()); // From my testing, you need this for the elimination pop-up
 ```
 
 ### SDK (AFortPlayerStateAthena.h)
