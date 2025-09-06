@@ -23,7 +23,7 @@ for (int i = 0; i < AllPlayerStates.Num(); ++i)
 		auto Controller = (AFortPlayerControllerAthena*)AllPlayerControllers.at(i);
 		if (!Controller) continue;
 
-		Controller->ClientReportTournamentPlacementPointsScored(1, 15); // Victory Royale points
+		Controller->ClientReportTournamentPlacementPointsScored(1, 50); // Victory Royale points
 
 		break;
 	}
@@ -40,10 +40,10 @@ for (int32 i = 0; i < AllPlayerControllers.Num(); ++i) {
 	if (Placement == 1) continue;
 
 	if (Placement <= 3) Controller->ClientReportTournamentPlacementPointsScored(Placement, 10);
-	else if (Placement <= 5) Controller->ClientReportTournamentPlacementPointsScored(Placement, 8);
-	else if (Placement <= 10) Controller->ClientReportTournamentPlacementPointsScored(Placement, 6);
-	else if (Placement <= 20) Controller->ClientReportTournamentPlacementPointsScored(Placement, 4);
-	else if (Placement <= 25) Controller->ClientReportTournamentPlacementPointsScored(Placement, 2);
+	else if (Placement <= 5) Controller->ClientReportTournamentPlacementPointsScored(Placement, 20);
+	else if (Placement <= 10) Controller->ClientReportTournamentPlacementPointsScored(Placement, 10);
+	else if (Placement <= 20) Controller->ClientReportTournamentPlacementPointsScored(Placement, 10);
+	else if (Placement <= 25) Controller->ClientReportTournamentPlacementPointsScored(Placement, 15);
 }
 ```
 
