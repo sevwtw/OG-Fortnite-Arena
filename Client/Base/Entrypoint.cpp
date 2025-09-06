@@ -16,8 +16,8 @@ DWORD Main(LPVOID) {
             ArenaPlaylist->UIExtensions.Add(ArenaUIExtension);
         }
         
-        *(bool*)(ImageBase + 0xB30CF9F) = true; //GIsClient
-        *(bool*)(ImageBase + 0xB30CF9D) = false; //GIsServer
+        *(bool*)(/* Image base address */ + /* Your GIsClient address */) = true;
+        *(bool*)(/* Image base address */ + /* Your GIsServer address */) = false;
     }
 
     return 0;
