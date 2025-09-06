@@ -1,7 +1,7 @@
-# Arena widget
+# Widget
 Displays the arena widget that shows all your hype points.
 
-### Put this into your SSL bypass (Starfall, Cobalt, etc.)
+### [Tutorial](https://www.youtube.com/watch?v=y-HN-7bhajU)
 ```cpp
 {
     { // Arena
