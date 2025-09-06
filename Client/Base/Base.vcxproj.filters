@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Server">
+      <UniqueIdentifier>{d492cf2a-0e20-417e-8e6d-86a1fc895e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\SDK">
+      <UniqueIdentifier>{e4274807-7592-4b2b-9775-e61ab270007d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\SDK\SDK">
+      <UniqueIdentifier>{dec7b348-2221-4fd7-ac29-68b26f4e6f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor">
+      <UniqueIdentifier>{9b75a766-330c-4360-b650-cca6e1d32ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\MinHook">
+      <UniqueIdentifier>{cf61c00a-8e64-4878-a989-cab042c1b423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Private">
+      <UniqueIdentifier>{236c45b1-f1c7-4dfc-86ac-a7a25a4533a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Public">
+      <UniqueIdentifier>{2624f50f-f412-4780-8077-047f55edf7e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MinHook\MinHook.h">
+      <Filter>Vendor\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\Public\Framework.h" />
+    <ClInclude Include="Server\SDK\UnrealContainers.hpp" />
+    <ClInclude Include="Server\SDK\PropertyFixup.hpp" />
+    <ClInclude Include="Server\SDK\SDK.hpp" />
+    <ClInclude Include="Server\SDK\SDK\AIModule_classes.hpp" />
+    <ClInclude Include="Server\SDK\SDK\Basic.hpp" />
+    <ClInclude Include="Server\SDK\SDK\Engine_structs.hpp" />
+    <ClInclude Include="minhook\MinHook.h" />
+    <ClInclude Include="MinHook\MinHook.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entrypoint.cpp" />
+    <ClCompile Include="Server\Public\Framework.cpp" />
+    <ClCompile Include="Server\SDK\SDK\AIModule_functions.cpp" />
+    <ClCompile Include="Server\SDK\SDK\Basic.cpp" />
+    <ClCompile Include="Server\SDK\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="Server\SDK\SDK\Engine_functions.cpp" />
+    <ClCompile Include="Server\SDK\SDK\FortniteGame_functions.cpp" />
+    <ClCompile Include="Server\SDK\SDK\GameplayAbilities_functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDK\NameCollisions.inl">
+      <Filter>Server\SDK</Filter>
+    </None>
+    <None Include="Server\SDK\NameCollisions.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="MinHook\MinHook.lib">
+      <Filter>Vendor\MinHook</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
