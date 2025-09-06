@@ -1,11 +1,9 @@
 # Placement Points
 Displays Arena points with placement scoring.
 
+### [Tutorial](https://www.youtube.com/watch?v=250LWiWNcLE)
+
 ### SDK (FortPlayerController.cpp)
-- Put this below the if (!bIsRespawningAllowed) block, it should look something like this.
-<img width="1038" height="348" alt="image" src="https://github.com/user-attachments/assets/3c0aa578-9770-4cb0-bb21-ae2ea0f842de" />
-
-
 ```cpp
 auto GameMode = Cast<AFortGameModeAthena>(GetWorld()->GetGameMode());
 
