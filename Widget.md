@@ -2,6 +2,7 @@
 Displays the arena widget that shows all your hype points.
 
 ### [Tutorial](https://www.youtube.com/watch?v=y-HN-7bhajU)
+### [SDK Tutorial](https://www.youtube.com/watch?v=E9qZ9GuV8XY)
 ```cpp
 {
     { // Arena
